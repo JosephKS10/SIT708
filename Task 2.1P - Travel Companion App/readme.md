@@ -1,8 +1,8 @@
-# 🌍 Travel Companion App
+# Travel Companion App
 
 An essential utility application built natively for Android, designed to help international travelers quickly and accurately convert critical values on the go. The app supports dynamic conversions across three main categories: Currency, Fuel Efficiency & Distance, and Temperature.
 
-## 🚀 Key Features
+## Key Features
 
 * **Dynamic Category Selection:** UI automatically updates the available source and destination units based on the selected category (Currency, Fuel & Distance, or Temperature).
 * **Hub-and-Spoke Currency Logic:** Utilizes a centralized base-unit conversion logic (USD) to efficiently calculate exchange rates across multiple global currencies without redundant code.
@@ -13,7 +13,7 @@ An essential utility application built natively for Android, designed to help in
   * Identity conversions (e.g., converting USD to USD)
 * **Real-time UI Feedback:** Utilizes intuitive Android Toast messages and integrated `EditText` error icons to guide the user toward correct inputs.
 
-## 🧮 Supported Conversions
+## Supported Conversions
 *(Note: Currency rates are fixed to 2026 project specifications)*
 
 **Currency:**
@@ -33,7 +33,7 @@ An essential utility application built natively for Android, designed to help in
 * **UI Toolkit:** XML (Views)
 * **IDE:** Android Studio (Minimum SDK: API 24 / Nougat)
 
-## 💻 Installation & Setup
+## Installation & Setup
 To run this project locally on your machine:
 
 1. **Clone the repository:**
