@@ -8,6 +8,14 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
+    <Switch
+        android:id="@+id/switchThemeMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvAppTitle"
         android:layout_width="wrap_content"

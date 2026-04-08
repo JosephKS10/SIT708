@@ -1,12 +1,16 @@
 package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -26,6 +30,15 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     private boolean isSubmitted = false;
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("CURRENT_INDEX", currentQuestionIndex);
+        outState.putInt("SCORE", score);
+        outState.putInt("SELECTED_OPTION", selectedOptionIndex);
+        outState.putBoolean("IS_SUBMITTED", isSubmitted);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
@@ -34,7 +47,34 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         initViews();
         loadQuestions();
-        setQuestionData();
+
+        Switch switchThemeQuiz = findViewById(R.id.switchThemeQuiz);
+        SharedPreferences sharedPreferences = getSharedPreferences("ThemePrefs", MODE_PRIVATE);
+        boolean isDarkMode = sharedPreferences.getBoolean("isDark", false);
+        switchThemeQuiz.setChecked(isDarkMode);
+
+        switchThemeQuiz.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("isDark", isChecked);
+            editor.apply();
+
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            }
+        });
+
+        if (savedInstanceState != null) {
+            currentQuestionIndex = savedInstanceState.getInt("CURRENT_INDEX", 0);
+            score = savedInstanceState.getInt("SCORE", 0);
+            selectedOptionIndex = savedInstanceState.getInt("SELECTED_OPTION", 0);
+            isSubmitted = savedInstanceState.getBoolean("IS_SUBMITTED", false);
+
+            restoreUIState();
+        } else {
+            setQuestionData();
+        }
     }
 
     private void initViews() {
@@ -79,6 +119,33 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
         progressBar.setProgress(currentQuestionIndex + 1);
         tvProgress.setText((currentQuestionIndex + 1) + "/" + questionList.size());
+    }
+
+    private void restoreUIState() {
+        Question currentQuestion = questionList.get(currentQuestionIndex);
+
+        tvQuestion.setText(currentQuestion.getQuestionText());
+        btnOption1.setText(currentQuestion.getOption1());
+        btnOption2.setText(currentQuestion.getOption2());
+        btnOption3.setText(currentQuestion.getOption3());
+        btnOption4.setText(currentQuestion.getOption4());
+        progressBar.setProgress(currentQuestionIndex + 1);
+        tvProgress.setText((currentQuestionIndex + 1) + "/" + questionList.size());
+
+        if (isSubmitted) {
+            if (selectedOptionIndex != currentQuestion.getCorrectAnswerIndex()) {
+                colorButton(selectedOptionIndex, "#F44336"); // Red
+            }
+            colorButton(currentQuestion.getCorrectAnswerIndex(), "#4CAF50"); // Green
+
+            if (currentQuestionIndex == questionList.size() - 1) {
+                btnSubmitNext.setText("Finish Quiz");
+            } else {
+                btnSubmitNext.setText("Go to Next Question");
+            }
+        } else if (selectedOptionIndex != 0) {
+            colorButton(selectedOptionIndex, "#000000");
+        }
     }
 
     @Override
@@ -126,7 +193,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void resetButtonColors() {
-        btnOption1.setBackgroundColor(Color.parseColor("#FF6200EE")); // Default Purple
+        btnOption1.setBackgroundColor(Color.parseColor("#FF6200EE"));
         btnOption2.setBackgroundColor(Color.parseColor("#FF6200EE"));
         btnOption3.setBackgroundColor(Color.parseColor("#FF6200EE"));
         btnOption4.setBackgroundColor(Color.parseColor("#FF6200EE"));
@@ -139,10 +206,10 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
         if (selectedOptionIndex == currentQuestion.getCorrectAnswerIndex()) {
             score++;
         } else {
-            colorButton(selectedOptionIndex, "#F44336"); // Red
+            colorButton(selectedOptionIndex, "#F44336");
         }
 
-        colorButton(currentQuestion.getCorrectAnswerIndex(), "#4CAF50"); // Green
+        colorButton(currentQuestion.getCorrectAnswerIndex(), "#4CAF50");
 
         if (currentQuestionIndex == questionList.size() - 1) {
             btnSubmitNext.setText("Finish Quiz");
