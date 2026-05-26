@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Personal Event Planner App</string>
+    <string name="title_events">Events</string>
+    <string name="title_add">New Event</string>
+    <string name="title_edit">Edit Event</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_date">Date and time</string>
+
+    <string name="cat_work">Work</string>
+    <string name="cat_social">Social</string>
+    <string name="cat_travel">Travel</string>
+    <string name="cat_other">Other</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_pick_date">Pick date</string>
+    <string name="action_pick_time">Pick time</string>
+
+    <string name="empty_events">No events yet. Tap Add to create one.</string>
+
+    <string name="err_title_required">Title is required</string>
+    <string name="err_date_required">Pick a date and time</string>
+    <string name="err_date_past">Date cannot be in the past</string>
+
+    <string name="msg_saved">Event saved</string>
+    <string name="msg_updated">Event updated</string>
+    <string name="msg_deleted">Event deleted</string>
+</resources>
