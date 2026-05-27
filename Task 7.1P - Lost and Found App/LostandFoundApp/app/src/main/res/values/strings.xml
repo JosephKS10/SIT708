@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lost and Found App</string>
+    <string name="btn_create_advert">CREATE A NEW ADVERT</string>
+    <string name="btn_show_items">SHOW ALL LOST &amp; FOUND ITEMS</string>
+
+    <string name="label_post_type">Post type:</string>
+    <string name="radio_lost">Lost</string>
+    <string name="radio_found">Found</string>
+    <string name="label_name">Name:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_description">Description:</string>
+    <string name="label_date">Date:</string>
+    <string name="label_location">Location:</string>
+    <string name="label_category">Category:</string>
+    <string name="label_image">Image:</string>
+    <string name="btn_pick_image">PICK IMAGE</string>
+    <string name="btn_pick_date">PICK DATE</string>
+    <string name="btn_save">SAVE</string>
+    <string name="hint_date">YYYY-MM-DD</string>
+
+    <string name="title_list">LOST &amp; FOUND ITEMS</string>
+    <string name="hint_search">Search by name or description</string>
+    <string name="filter_all">All</string>
+    <string name="empty_list">No items yet. Tap back and create one.</string>
+    <string name="btn_remove">REMOVE</string>
+    <string name="confirm_remove_title">Remove item?</string>
+    <string name="confirm_remove_msg">This advert will be permanently deleted.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_remove">Remove</string>
+</resources>
