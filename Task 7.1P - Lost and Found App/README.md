@@ -235,8 +235,3 @@ Planned enhancements, described in full in the accompanying Future Direction Rep
 - On-device image matching using TensorFlow Lite to suggest probable lost/found matches.
 - Trust-and-safety features: verified contact, in-app messaging, and listing reports.
 
-
-## Author
-
-**Joseph K. Saji**
-SIT708 Mobile Application Development — Deakin University
