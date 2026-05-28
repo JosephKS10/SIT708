@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Create a new advert"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="POST TYPE"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Lost"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Found"
+                android:textColor="@color/black"
+                android:buttonTint="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="NAME"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="PHONE"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="DESCRIPTION"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input"
+            android:gravity="top|start"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="DATE"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingHorizontal="12dp"
+            android:hint="Tap to pick"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LOCATION"
+            android:textColor="@color/grey_700"
+            android:textSize="11sp"
+            android:letterSpacing="0.15" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input"
+            android:clickable="true"
+            android:focusable="false"
+            android:paddingHorizontal="12dp"
+            android:hint="Tap to pick a place"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_500"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input"
+            android:text="GET CURRENT LOCATION"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:letterSpacing="0.1" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:letterSpacing="0.1" />
+    </LinearLayout>
+</ScrollView>

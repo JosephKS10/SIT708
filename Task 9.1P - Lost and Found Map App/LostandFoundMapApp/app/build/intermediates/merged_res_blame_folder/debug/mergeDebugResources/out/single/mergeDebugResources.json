@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_item_row.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/item_row.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_activity_main.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_activity_all_items.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/activity_all_items.xml"
+    },
+    {
+        "merged": "com.josephb.lostandfoundmapapp-debug-43:/layout_activity_create_advert.xml.flat",
+        "source": "com.josephb.lostandfoundmapapp-main-45:/layout/activity_create_advert.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/drawable_bg_card.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_activity_place_picker.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/activity_place_picker.xml"
+    },
+    {
+        "merged": "com.josephb.lostandfoundmapapp-debug-43:/layout_activity_place_picker.xml.flat",
+        "source": "com.josephb.lostandfoundmapapp-main-45:/layout/activity_place_picker.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/drawable_bg_input.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_activity_map.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/activity_map.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/layout_activity_create_advert.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/layout/activity_create_advert.xml"
+    },
+    {
+        "merged": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-debug-43:/drawable_bg_button_primary.xml.flat",
+        "source": "/Users/josephksaji/.gradle/daemon/9.3.1/com.josephb.lostandfoundmapapp-main-45:/drawable/bg_button_primary.xml"
+    }
+]

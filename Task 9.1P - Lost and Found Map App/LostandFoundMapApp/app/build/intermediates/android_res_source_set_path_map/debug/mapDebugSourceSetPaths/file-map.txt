@@ -1,0 +1,7 @@
+com.josephb.lostandfoundmapapp-pngs-0 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/build/generated/res/pngs/debug
+com.josephb.lostandfoundmapapp-updated_navigation_xml-1 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/build/generated/updated_navigation_xml/debug
+com.josephb.lostandfoundmapapp-packageDebugResources-2 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.josephb.lostandfoundmapapp-packageDebugResources-3 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.josephb.lostandfoundmapapp-debug-4 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.josephb.lostandfoundmapapp-debug-5 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/src/debug/res
+com.josephb.lostandfoundmapapp-main-6 /Users/josephksaji/AndroidStudioProjects/LostandFoundMapApp/app/src/main/res

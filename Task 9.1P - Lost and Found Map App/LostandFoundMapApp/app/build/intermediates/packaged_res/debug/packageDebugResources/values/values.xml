@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_900">#212121</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Lost &amp; Found</string>
+    <style name="Theme.LostAndFoundMapApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/grey_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/grey_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+</resources>
