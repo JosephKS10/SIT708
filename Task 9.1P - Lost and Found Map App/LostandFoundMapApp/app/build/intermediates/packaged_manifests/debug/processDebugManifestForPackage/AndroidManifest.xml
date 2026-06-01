@@ -41,7 +41,7 @@
         android:theme="@style/Theme.LostAndFoundMapApp" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAnSEGCNJ1gZzaSwEp2WZP9FV_PiZJl6cQ" />
+            android:value="" />
 
         <activity
             android:name="com.josephb.lostandfoundmapapp.MainActivity"
